@@ -43,5 +43,3 @@ elif n == 3:
 else:
     print('\033[1;31mO código digitado não é uma das opções.\033[m')
 sleep(10)
-
-print(teste)
