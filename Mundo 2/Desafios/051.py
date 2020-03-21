@@ -7,6 +7,7 @@ termos dessa progressão.
 x = int(input('Escolha o primeiro termo da PA: '))
 y = int(input('Escolha a razão da PA: '))
 print('Progressão aritmética:')
-for i in range(0, 11):
+for i in range(0, 10):
     pa = x + (i * y)
-    print(pa)
+    print(pa, end=' -> ')
+print('FIM')

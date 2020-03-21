@@ -4,7 +4,7 @@ número que o usuário escolher, só que agora utilizando
 um laço FOR.
 """
 n = int(input('Digite um número inteiro entre (1 e 10): '))
-if 1 < n > 10:
+if 10 < n or n < 1:
     print('Número de tabuada inválido.')
 else:
     print('-=' * 10)

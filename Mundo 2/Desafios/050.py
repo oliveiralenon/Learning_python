@@ -7,5 +7,5 @@ s = 0
 for i in range(0, 6):
     n = int(input(f'Digite um número inteiro ({i+1}/6): '))
     if n % 2 == 0:
-        s = s + n
+        s += n
 print(f'A soma dos números pares é: {s}')

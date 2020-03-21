@@ -5,11 +5,13 @@ se ele é ou não um número primo.
 
 n = int(input('Digite um número inteiro: '))
 contador = 0
-for i in range(2, n):
-    if (n % i == 0):
-        print(f'Múltiplo de {i}')
+for i in range(1, n+1):
+    if n % i == 0:
+        print(f'\033[4;33m{i}\033[m', end=' ')
         contador = contador + 1
-if contador == 0:
-    print(f'Número {n} é primo')
+    else:
+        print(f'\033[31m{i}\033[m', end=' ')
+if contador == 2:
+    print(f'\nNúmero {n} é primo, pois é dividido apenas por 1 ou ele mesmo.')
 else:
-    print(f'Número {n} não é primo pois tem {contador} múltiplo(s) acima de 2.')
+    print(f'\nNúmero {n} não é primo pois tem {contador} múltiplo(s).')

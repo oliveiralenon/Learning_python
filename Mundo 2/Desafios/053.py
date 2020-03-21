@@ -2,7 +2,7 @@
 Crie um programa que leia um frase qualquer e diga
 se ela é um palíndromo, desconsiderando os espaços.
 """
-frase = str(input('Digite uma frase: ')).lower()
+frase = str(input('Digite uma frase: ')).upper().replace(' ', '')
 contrario = frase[::-1]
 if frase == contrario:
     print(f'A frase é um palíndromo.\nFrase: {frase}\nFrase ao ontrário: {contrario}')
