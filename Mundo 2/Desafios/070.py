@@ -24,7 +24,7 @@ while True:
     if preco > 1000:
         cont += 1
     opcao = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
-    if opcao != 'S' and opcao != 'N':
+    while opcao != 'S' and opcao != 'N':
         opcao = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if opcao == 'N':
         break

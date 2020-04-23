@@ -15,7 +15,7 @@ while True:
     if idade > 18:
         cont += 1
     sexo = str(input('Sexo: [M/F] ')).strip().upper()[0]
-    if sexo != 'M' and sexo != 'F':
+    while sexo != 'M' and sexo != 'F':
         sexo = str(input('Sexo: [M/F] ')).strip().upper()[0]
         if sexo == 'F':
             if idade < 20:
@@ -32,9 +32,9 @@ while True:
     opcao = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if opcao == 'N':
         break
-    if opcao != 'S' and opcao != 'N':
+    while opcao != 'S' and opcao != 'N':
         opcao = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
-print('===== FIM DO PROGRAMA =====')
 print(f'Foram cadastradas um total de {cont} pessoas maiores de 18 anos.')
 print(f'Foram cadastrados um total de {homem} homens.')
 print(f'Foram cadastradas um total de {mulher} mulheres com menos de 20 anos.')
+print('===== FIM DO PROGRAMA =====')
